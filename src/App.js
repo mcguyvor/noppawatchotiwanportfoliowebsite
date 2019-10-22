@@ -5,7 +5,8 @@ import Portfolio from './component/Portfolio';
 import './App.css';
 function App() {
   return (
-    <div className='App'>
+    <div className='App' >
+      <div id='top'></div>
       <Navbar/>
       <AboutMe/>
       <Portfolio/>

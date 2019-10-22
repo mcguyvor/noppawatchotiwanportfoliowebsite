@@ -4,19 +4,19 @@ import downLoadIcon from '../media/download.png';
 import '../style/AboutMe.css';
 import resume from '../media/noppawatresumepdf.pdf';
 import githubIcon from '../media/github-logo.png';
-import nerd from '../media/nerd.png';
+import reading from '../media/reading.png';
 const AboutMe=()=>{
     const thaiFlag = flag;
     const downloadIcon = downLoadIcon;
     const resumeFile = resume;
     const gitIcon = githubIcon;
-    const nerdIcon = nerd;
+    const readingIcon = reading;
     return(
-        <div className='container mt-5'>
+        <div className='container mt-5' id='aboutme'>
             <div className='row justify-content-center'>
                 <div className='col-8 jumbotron rounded border-bottom border-right boxSha bg-light pt-4 pb-4'>
                     <h1 className="display-6 text-center">About me</h1>
-                    <p className="lead mx-3 text-center">I'm Noppawat Chotiwan, a 23 years old self-taught developer <span><img src={nerdIcon} style={{width:'1rem'}}/></span> from Thailand <span><img src={thaiFlag} style={{width:'1.5rem'}}alt='Thai flag'/></span>.<br/>
+                    <p className="lead mx-3 text-center">I'm Noppawat Chotiwan, a 23 years old self-taught developer <span><img src={readingIcon} style={{width:'1rem'}}/></span> from Thailand <span><img src={thaiFlag} style={{width:'1.5rem'}}alt='Thai flag'/></span><br/>
                     I was a quality assurace engineer at <span className='font-italic'><a href='https://www.wongnai.com/' target='_blank'>Wongnai media </a></span>since Febuary my responsibities was assuring the quality of the software by manual test and automating using <span className='font-italic'><a href='https://pptr.dev/' target='_blank'>Puppeteer  </a></span> 
                     then I realise that I want to learn more about web development and become front end developer then I decided to start learning html, css, javascript and react. After a while I'm so into the react and decided for a change in my life, in August I decided to left my old job and take a full risk from it.
                     <br/>If you want to know more about me click resume button below Thanks !.

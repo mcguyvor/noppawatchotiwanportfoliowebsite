@@ -8,7 +8,7 @@ const Portfolio=()=>{
     const startupIcon = startup;
     const gitIcon = githubIcon;
     return( 
-        <div className='container'>
+        <div className='container' id='portfolio'>
             <h1 className='title text-center'>Portfolio</h1>
             <div className='card-columns'>
                 <div className='card p-2 sha'>
