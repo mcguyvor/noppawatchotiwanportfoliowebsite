@@ -1,0 +1,25 @@
+.btn-change{
+   
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    
+}
+.btn-change:hover{
+    -webkit-transform: scale(1.1);
+    background: #1163ba;
+}
+.btn-change7{
+   
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+}
+.btn-change7:hover{
+    box-shadow:100px 0 0 #1f0ade inset;
+}
+.sha{
+    -webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
+}

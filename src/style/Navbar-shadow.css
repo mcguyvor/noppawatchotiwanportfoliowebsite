@@ -1,0 +1,10 @@
+.Navbar-shadow{
+    -webkit-box-shadow: 6px 5px 12px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 5px 12px -4px rgba(0,0,0,0.75);
+box-shadow: 6px 5px 12px -4px rgba(0,0,0,0.75);
+}
+.mainSha{
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.47);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.47);
+}
