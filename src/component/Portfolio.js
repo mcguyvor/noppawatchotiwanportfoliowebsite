@@ -22,7 +22,7 @@ const Portfolio=()=>{
     const listItems =[{
                         imgSrc:nytGif,
                         title:'BANGKOK TIME',
-                        detail:'News App, where the user can pick the News from month and year. The app use NewYork Time API for the resources',
+                        detail:'News App, where the users can pick the news by month and year. The app uses NewYork Time API for the resources.',
                         stack:'REACT-REACTHOOK-BOOTSTRAP-AXIOS',
                         pageSrc:'https://nytreacthookpractice.firebaseapp.com/',
                         gitHubSrc:'https://github.com/mcguyvor/react-hook-new-york-time-api'
@@ -30,7 +30,7 @@ const Portfolio=()=>{
                         {
                         imgSrc:youtubeGif,
                         title:'YOUTUBE API SEARCH',
-                        detail:'Youtube App for the user to search their video.',
+                        detail:'Youtube App for the users to search their video.',
                         stack:'REACT-AXIOS',
                         pageSrc:'https://api-react-350b3.firebaseapp.com/',
                         gitHubSrc:'https://github.com/mcguyvor/react-search-with-youtube-api'
@@ -38,7 +38,7 @@ const Portfolio=()=>{
                         {
                         imgSrc:dogList,
                         title:'Dog List with react-router',
-                        detail: 'Dog list app for dogs detail',
+                        detail: "Dog list App for dog lovers to the dogs' profile",
                         stack:'REACT-REACT ROUTER',
                         pageSrc:'https://react-router-dog-list.firebaseapp.com',
                         gitHubSrc:'https://github.com/mcguyvor/doglist-for-react-router-practice-with-navlink-nav'
@@ -54,7 +54,7 @@ const Portfolio=()=>{
                         {
                         imgSrc:todoReduxGif,
                         title:'Todo List with redux form',
-                        detail:'Todo List app for the user to mark their todo in each day. The user can see what they have been achieved in each day by mark the todos and they can filter their todo by click the filter button.',
+                        detail:"Todo List app for the users to add their To do's daily. They can filter their To do's by clicking the filter button to show all to do's or completed to do's.",
                         stack:'REACT-REDUX-REDUX_FORM_BOOTSTRAP',
                         pageSrc:'https://todolist-react-redux-reduxform.firebaseapp.com/',
                         gitHubSrc:'https://github.com/mcguyvor/todolist-redux/tree/master/src'
@@ -62,7 +62,7 @@ const Portfolio=()=>{
                         {
                         imgSrc:restgif,
                         title:'Restaurant manager',
-                        detail:'Restaurant manager web app, enable user to add or remove the product and order product from the website',
+                        detail:'Restaurant manager web app, enable users to add or remove products and order products from the website.',
                         stack:'REACT-REDUX-REDUX-FORM-BOOTSTRAP-JSON SERVER-AXIOS',
                         pageSrc:null,
                         gitHubSrc:'https://github.com/mcguyvor/client'

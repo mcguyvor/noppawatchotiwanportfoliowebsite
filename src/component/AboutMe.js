@@ -17,9 +17,14 @@ const AboutMe=()=>{
                 <div className='col-8 col-xs-12 jumbotron rounded border-bottom border-right boxSha bg-light pt-4 pb-4'>
                     <h1 className="display-6 text-center">About me</h1>
                     <p className="lead mx-3 text-center">I'm <span className='hvr-underline-from-center'>Noppawat Chotiwan</span>, a 23 years old self-taught developer <span><img  className ='bounce'src={readingIcon} style={{width:'1rem'}}/></span> from Thailand <span><img className='bounce'src={thaiFlag} style={{width:'1.5rem'}}alt='Thai flag'/></span><br/>
-                    I was a quality assurace engineer at <span className='font-italic'><a href='https://www.wongnai.com/' target='_blank'>Wongnai media </a></span>since Febuary my responsibities was assuring the quality of the software by manual test and automating using <span className='font-italic'><a href='https://pptr.dev/' target='_blank'>Puppeteer  </a></span> 
-                    then I realise that I want to learn more about web development and become front end developer then I decided to start learning html, css, javascript and react. After a while I'm so into the react and decided for a change in my life, in August I decided to left my old job and take a full risk from it.
-                    <br/>If you want to know more about me click resume button below Thanks !.
+                    I worked as a Quality Assurance Engineer at <span className='font-italic'><a href='https://www.wongnai.com/' target='_blank'>Wongnai Media </a></span>
+                    from Febuary to August.  My job was to ensure the quality of the software by manual test and automating using <span className='font-italic'><a href='https://pptr.dev/' target='_blank'>Puppeteer  </a></span> 
+                    After having been worked for some months, I realized that I wanted to learn more on web development and 
+                    become a front end developer.  Then I decided to start learning html, css, 
+                    javascript and react. After a while I'm so into the react and decided for 
+                    taking change.  In August I decided to leave Wongnai Media to pursue on my 
+                    passion to become a front end developer.
+                    <br/>If you want to know more about me, please click resume button below.   Thanks!.
                     
                     </p>
                     <hr className="my-2"/>
