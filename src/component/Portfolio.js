@@ -70,7 +70,7 @@ const Portfolio=()=>{
                         {
                         imgSrc:pokedex,
                         title:'Pokedex',
-                        detail:'My very first React web app, this pokedex game calculate the score for each player by its experience',
+                        detail:'My very first React web app, this pokedex game calculates the scores for each player by its experience',
                         stack:'REACT',
                         pageSrc:'https://pokedex-473d5.firebaseapp.com/',
                         gitHubSrc:'https://github.com/mcguyvor/pokedex'
