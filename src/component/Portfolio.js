@@ -1,34 +1,107 @@
 import React from 'react';
 import nytgif from '../media/nytreackhookgif.gif';
+import youtubeSearchGif from '../media/youtube-api-react.gif';
+import vending from '../media/vendingmachine.gif';
 import startup from '../media/startup.png';
 import githubIcon from '../media/github-logo.png';
+import dogListGif from '../media/react-router-dog-list.gif';
+import todoredux from '../media/todolistreduxreduxform.gif';
+import pokedexGif from '../media/pokedex.gif';
 import '../style/Portfolio.css';
+import restaurantmanager from '../media/restaurant-manager.gif';
 const Portfolio=()=>{
     const nytGif = nytgif;
+    const youtubeGif = youtubeSearchGif;
     const startupIcon = startup;
     const gitIcon = githubIcon;
+    const dogList = dogListGif;
+    const vendingGif = vending;
+    const todoReduxGif = todoredux;
+    const restgif = restaurantmanager;
+    const pokedex = pokedexGif;
+    const listItems =[{
+                        imgSrc:nytGif,
+                        title:'BANGKOK TIME',
+                        detail:'News App, where the user can pick the News from month and year. The app use NewYork Time API for the resources',
+                        stack:'REACT-REACTHOOK-BOOTSTRAP-AXIOS',
+                        pageSrc:'https://nytreacthookpractice.firebaseapp.com/',
+                        gitHubSrc:'https://github.com/mcguyvor/react-hook-new-york-time-api'
+                        },
+                        {
+                        imgSrc:youtubeGif,
+                        title:'YOUTUBE API SEARCH',
+                        detail:'Youtube App for the user to search their video.',
+                        stack:'REACT-AXIOS',
+                        pageSrc:'https://api-react-350b3.firebaseapp.com/',
+                        gitHubSrc:'https://github.com/mcguyvor/react-search-with-youtube-api'
+                        },
+                        {
+                        imgSrc:dogList,
+                        title:'Dog List with react-router',
+                        detail: 'Dog list app for dogs detail',
+                        stack:'REACT-REACT ROUTER',
+                        pageSrc:'https://react-router-dog-list.firebaseapp.com',
+                        gitHubSrc:'https://github.com/mcguyvor/doglist-for-react-router-practice-with-navlink-nav'
+                        },
+                        {
+                        imgSrc:vendingGif,
+                        title: 'Vending machine',
+                        detail:'Vending machine app provided three differents items for the user to pick',
+                        stack:'REACT-REACT ROUTER-REDUX',
+                        pageSrc:'https://vendingmachinereactrouterredux.firebaseapp.com',
+                        gitHubSrc:'https://github.com/mcguyvor/vending-machine-react-routing-redux-prac'
+                        },
+                        {
+                        imgSrc:todoReduxGif,
+                        title:'Todo List with redux form',
+                        detail:'Todo List app for the user to mark their todo in each day. The user can see what they have been achieved in each day by mark the todos and they can filter their todo by click the filter button.',
+                        stack:'REACT-REDUX-REDUX_FORM_BOOTSTRAP',
+                        pageSrc:'https://todolist-react-redux-reduxform.firebaseapp.com/',
+                        gitHubSrc:'https://github.com/mcguyvor/todolist-redux/tree/master/src'
+                        },
+                        {
+                        imgSrc:restgif,
+                        title:'Restaurant manager',
+                        detail:'Restaurant manager web app, enable user to add or remove the product and order product from the website',
+                        stack:'REACT-REDUX-REDUX-FORM-BOOTSTRAP-JSON SERVER-AXIOS',
+                        pageSrc:null,
+                        gitHubSrc:'https://github.com/mcguyvor/client'
+                        },
+                        {
+                        imgSrc:pokedex,
+                        title:'Pokedex',
+                        detail:'My very first React web app, this pokedex game calculate the score for each player by its experience',
+                        stack:'REACT',
+                        pageSrc:'https://pokedex-473d5.firebaseapp.com/',
+                        gitHubSrc:'https://github.com/mcguyvor/pokedex'
+                            }
+];
     return( 
-        <div className='container' id='portfolio'>
+        <div className='container ' id='portfolio'>
             <h1 className='title text-center'>Portfolio</h1>
             <div className='card-columns'>
-                <div className='card p-2 sha'>
-                    <img style={{width:'100%'}}src={nytGif} className='shadow-lg rounded card-img-top p-2'/> 
+                {listItems.map((idx=>{return(
+                <div className='card p-2 sha threed col-xs-12'>
+                    <img style={{width:'100%'}}src={idx.imgSrc} className='shadow-lg rounded card-img-top p-2'/> 
                         <div className="card-body">
-                            <h5 className="card-title title font-weight-bold text-monospace"><u>BANGKOK TIME</u></h5>
-                            <p className="card-text">News App, where the user can pick the News from month and year.
-                            The app use NewYork Time API for the resources</p>
-                            <p className="card-text font-weight-bold text-center"><small><strong>REACT-REACKHOOK-BOOTSTRAP</strong></small></p>
+                            <h5 className="card-title title font-weight-bold text-monospace"><u>{idx.title}</u></h5>
+                            <p className="card-text">{idx.detail}</p>
+                            <p className="card-text font-weight-bold text-center"><small><strong>{idx.stack}</strong></small></p>
                             <div className='d-flex justify-content-center'>
-                                <a className="btn btn-primary rounded-pill mr-2 shadow btn-change" href="https://nytreacthookpractice.firebaseapp.com/" role="button" target='_blank'>
+                                {idx.pageSrc!==null?
+                                <a className="btn btn-primary rounded-pill mr-2 shadow btn-change" href={idx.pageSrc} role="button" target='_blank'>
                                 <span><img src={startupIcon} className='mr-1'style={{width:'1rem'}}/></span>
                                 Visit</a>
-                                <a className="btn btn-outline-primary rounded-pill shadow btn-change" href="https://github.com/mcguyvor/react-hook-new-york-time-api" role="button" target='_blank'>
+                                : null}
+                                <a className="btn btn-outline-primary rounded-pill shadow btn-change" href={idx.gitHubSrc} role="button" target='_blank'>
                                 <span><img src={gitIcon} className='mr-1' style={{width:'1rem'}}/></span>
                                 Github</a>
                             </div>
-                            
                         </div>
                 </div>
+                )})
+                )
+                }
                 
             </div>
         </div>

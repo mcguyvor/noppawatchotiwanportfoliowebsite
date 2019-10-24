@@ -23,3 +23,13 @@
 -moz-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
 box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.75);
 }
+h1{
+	font-family: 'Poppins', sans-serif;
+}
+.threed:hover
+{
+        box-shadow:
+        3px 3px 8px 0px rgba(0,0,0,0.75);
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}

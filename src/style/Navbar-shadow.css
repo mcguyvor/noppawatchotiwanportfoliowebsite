@@ -8,3 +8,31 @@ box-shadow: 6px 5px 12px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.47);
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.47);
 }
+.bounce{
+
+}
+.bounce:hover{
+    animation: bounce 1s;
+}
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.fifty:before {
+	background: green;
+	height: 50px;
+	display: block;
+	content: '';
+  }
