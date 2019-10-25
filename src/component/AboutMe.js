@@ -2,7 +2,7 @@ import React from 'react';
 import flag from '../media/thai-flag.png';
 import downLoadIcon from '../media/download.png';
 import '../style/AboutMe.css';
-import resume from '../media/noppawatresumepdf.pdf';
+import resume from '../media/noppawatresumepdf2.pdf';
 import githubIcon from '../media/github-logo.png';
 import reading from '../media/reading.png';
 const AboutMe=()=>{
