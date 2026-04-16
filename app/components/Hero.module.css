@@ -119,6 +119,16 @@
   letter-spacing: 1px;
 }
 
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .currentRole {
   font-family: 'Preahvihear', sans-serif;
   font-size: 1.1rem;
@@ -132,15 +142,6 @@
 
 .companyLink:hover {
   opacity: 0.8;
-}
-
-.bio {
-  font-family: 'Preahvihear', sans-serif;
-  font-size: 1.1rem;
-  color: #ffffff;
-  line-height: 1.8;
-  max-width: 900px;
-  opacity: 0.9;
 }
 
 .resumeBtn {

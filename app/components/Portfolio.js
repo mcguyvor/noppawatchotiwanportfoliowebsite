@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Portfolio.module.css';
 
 const projects = [
@@ -47,6 +45,7 @@ const Portfolio = () => {
       <div className={styles.gradientOrb1}></div>
       <div className={styles.gradientOrb2}></div>
       <div className={styles.container}>
+        <h2 className={styles.sectionTitle}>Featured Projects</h2>
         {projects.map((project, index) => (
           <div
             className={`${styles.projectRow} ${index % 2 !== 0 ? styles.reversed : ''}`}
@@ -58,6 +57,7 @@ const Portfolio = () => {
                   src={project.imgSrc}
                   alt={project.title}
                   loading="lazy"
+                  decoding="async"
                   width="540"
                   height="320"
                 />

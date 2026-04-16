@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Contact.module.css';
 
 const Contact = () => {

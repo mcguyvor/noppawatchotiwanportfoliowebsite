@@ -1,0 +1,26 @@
+.bio {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.8;
+  max-width: 900px;
+  opacity: 0.9;
+  height: 12rem;
+}
+
+@media (max-width: 768px) {
+  .bio {
+    height: 23rem;
+    font-size: 0.95rem;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

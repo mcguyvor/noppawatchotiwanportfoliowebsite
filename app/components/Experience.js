@@ -1,5 +1,3 @@
-'use client';
-
 import styles from './Experience.module.css';
 
 const experiences = [

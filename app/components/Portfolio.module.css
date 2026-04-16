@@ -4,6 +4,15 @@
   overflow: hidden;
 }
 
+.sectionTitle {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  letter-spacing: 0.8px;
+}
+
 .gradientOrb1 {
   position: absolute;
   width: 642px;
