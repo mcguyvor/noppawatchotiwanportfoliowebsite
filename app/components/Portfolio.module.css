@@ -1,0 +1,151 @@
+.section {
+  position: relative;
+  padding: 80px 2rem;
+  overflow: hidden;
+}
+
+.gradientOrb1 {
+  position: absolute;
+  width: 642px;
+  height: 720px;
+  top: 200px;
+  right: 10%;
+  background: radial-gradient(circle, rgba(113, 39, 186, 0.2) 0%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.gradientOrb2 {
+  position: absolute;
+  width: 572px;
+  height: 641px;
+  bottom: 200px;
+  left: 5%;
+  background: radial-gradient(circle, rgba(79, 34, 141, 0.2) 0%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.projectRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.reversed {
+  direction: rtl;
+}
+
+.reversed > * {
+  direction: ltr;
+}
+
+.projectImage {
+  position: relative;
+}
+
+.imageCard {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.imageCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.projectText {
+  padding: 1rem 0;
+}
+
+.featured {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #9857d3;
+  letter-spacing: 0.32px;
+  margin-bottom: 0.5rem;
+}
+
+.projectTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ccd6f6;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.68px;
+}
+
+.descCard {
+  background: rgba(79, 34, 141, 0.15);
+  border: 1px solid rgba(113, 39, 186, 0.2);
+  backdrop-filter: blur(40px);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projectDesc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+
+.stack {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.linkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #ccd6f6;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.linkIcon:hover {
+  color: #a362ff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .projectRow,
+  .reversed {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .projectTitle {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    gap: 4rem;
+  }
+}

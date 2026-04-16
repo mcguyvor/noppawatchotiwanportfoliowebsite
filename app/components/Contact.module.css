@@ -1,0 +1,63 @@
+.section {
+  position: relative;
+  padding: 80px 2rem 60px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.email {
+  display: inline-block;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+}
+
+.email:hover {
+  color: #a362ff;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(79, 34, 141, 0.3);
+  border: 1px solid rgba(113, 39, 186, 0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.socialLink:hover {
+  background: rgba(113, 39, 186, 0.5);
+  transform: translateY(-2px);
+}
