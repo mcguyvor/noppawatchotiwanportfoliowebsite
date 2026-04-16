@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 80px 2rem 60px;
+  padding: 80px 2rem 0px;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -54,7 +54,7 @@
   display: flex;
   align-items: flex-start;
   gap: 2.5rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .avatarWrapper {
@@ -148,7 +148,6 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 2rem;
   padding: 0.85rem 2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -160,11 +159,36 @@
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
+  height: 50px;
 }
 
 .resumeBtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(113, 39, 186, 0.4);
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(79, 34, 141, 0.3);
+  border: 1px solid rgba(113, 39, 186, 0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.socialIcon:hover {
+  background: rgba(113, 39, 186, 0.5);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -185,4 +209,8 @@
   .bio {
     font-size: 0.95rem;
   }
+  .intro {
+  margin-bottom: 0px;
+}
+
 }

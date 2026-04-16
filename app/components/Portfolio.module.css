@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 80px 2rem;
+  padding: 80px 2rem 0px;
   overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
   font-size: 2.2rem;
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   letter-spacing: 0.8px;
 }
 
@@ -42,7 +42,7 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  /* gap: 6rem; */
 }
 
 .projectRow {
