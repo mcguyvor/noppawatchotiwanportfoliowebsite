@@ -1,0 +1,216 @@
+.hero {
+  position: relative;
+  padding: 80px 2rem 0px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.gradientOrb1 {
+  position: absolute;
+  width: 385px;
+  height: 431px;
+  top: 150px;
+  left: 20%;
+  background: radial-gradient(circle, rgba(113, 39, 186, 0.4) 0%, transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.gradientOrb2 {
+  position: absolute;
+  width: 625px;
+  height: 700px;
+  top: 600px;
+  right: 10%;
+  background: radial-gradient(circle, rgba(79, 34, 141, 0.3) 0%, transparent 70%);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.greeting {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.highlight {
+  color: #7127ba;
+}
+
+.profileRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  /* margin-bottom: 2rem; */
+}
+
+.avatarWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatarGlow {
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(113, 39, 186, 0.5) 0%, transparent 70%);
+  filter: blur(20px);
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.tagline {
+  padding-top: 0.5rem;
+}
+
+.designerLabel {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.headline {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.subtext {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 0.7rem;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.roleSection {
+  margin-bottom: 2rem;
+}
+
+.roleTitle {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.currentRole {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.companyLink {
+  color: #1877f2;
+  transition: opacity 0.3s;
+}
+
+.companyLink:hover {
+  opacity: 0.8;
+}
+
+.resumeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7127ba, #4f228d);
+  border: 1px solid rgba(163, 98, 255, 0.3);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  height: 50px;
+}
+
+.resumeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(113, 39, 186, 0.4);
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(79, 34, 141, 0.3);
+  border: 1px solid rgba(113, 39, 186, 0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.socialIcon:hover {
+  background: rgba(113, 39, 186, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .profileRow {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headline {
+    font-size: 2rem;
+  }
+
+  .roleTitle {
+    font-size: 1.8rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+  }
+  .intro {
+  margin-bottom: 0px;
+}
+
+}
