@@ -17,8 +17,10 @@ const Hero = () => {
               <div className={styles.avatarGlow}></div>
               <img
                 src="/media/nerd.png"
-                alt="Noppawat Chotiwan"
+                alt="Noppawat Chotiwan - Senior Software Engineer"
                 className={styles.avatar}
+                width="180"
+                height="180"
               />
             </div>
           </div>

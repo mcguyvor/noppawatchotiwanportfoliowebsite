@@ -9,9 +9,6 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <a href="#" className={styles.logo}>
-          <img src="/media/logo.png" alt="logo" width="35" height="39" />
-        </a>
         <button
           className={styles.menuToggle}
           onClick={() => setMenuOpen(!menuOpen)}

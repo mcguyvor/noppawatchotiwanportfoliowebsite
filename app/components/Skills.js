@@ -45,6 +45,7 @@ const Skills = () => {
   return (
     <section className={styles.section} id="skills">
       <div className={styles.container}>
+        <h2 className={styles.srOnly}>Skills &amp; Technologies</h2>
         <p className={styles.subtitle}>
           I&apos;m currently looking to join a{' '}
           <span className={styles.highlight}>cross-functional</span> team

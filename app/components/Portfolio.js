@@ -54,7 +54,13 @@ const Portfolio = () => {
           >
             <div className={styles.projectImage}>
               <div className={styles.imageCard}>
-                <img src={project.imgSrc} alt={project.title} />
+                <img
+                  src={project.imgSrc}
+                  alt={project.title}
+                  loading="lazy"
+                  width="540"
+                  height="320"
+                />
               </div>
             </div>
             <div className={styles.projectText}>

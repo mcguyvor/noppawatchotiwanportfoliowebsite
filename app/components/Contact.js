@@ -28,6 +28,7 @@ const Contact = () => {
               alt="GitHub"
               width="20"
               height="20"
+              loading="lazy"
               style={{ filter: 'brightness(0) invert(1)' }}
             />
           </a>
@@ -43,6 +44,7 @@ const Contact = () => {
               alt="LinkedIn"
               width="20"
               height="20"
+              loading="lazy"
               style={{ filter: 'brightness(0) invert(1)' }}
             />
           </a>
