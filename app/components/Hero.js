@@ -60,7 +60,7 @@ const Hero = () => {
             download
             className={styles.resumeBtn}
           >
-            📄 Download Resume
+            📄 Resume
           </a>
           <a
             href="https://github.com/mcguyvor"
